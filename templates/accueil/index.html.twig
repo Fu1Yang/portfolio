@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil index{% endblock %}
+
+{% block body %}
+    <h1>Accueil index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Images</th>
+                <th>Titre</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for accueil in accueils %}
+            <tr>
+                <td>{{ accueil.id }}</td>
+                <td>{{ accueil.images }}</td>
+                <td>{{ accueil.titre }}</td>
+                <td>
+                    <a href="{{ path('app_accueil_show', {'id': accueil.id}) }}">show</a>
+                    <a href="{{ path('app_accueil_edit', {'id': accueil.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_accueil_new') }}">Create new</a>
+{% endblock %}

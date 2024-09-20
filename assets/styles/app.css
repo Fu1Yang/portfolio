@@ -1,0 +1,202 @@
+body {
+    background: linear-gradient(to left, rgb(40,40,40), rgb(100,100,100));
+}
+h1 {
+    color: white;
+}
+#herder {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+}
+#herder h1 {
+    margin-left: 162px;
+    margin-top: 204px;
+}
+#herder h1:hover {
+    box-shadow: 20px 20px 50px red;
+    color: red;
+    
+}
+#photo img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+ }
+#photo img:hover{
+    color: red;
+    box-shadow: 5px 5px 200px red;
+} 
+#herder p {
+    margin-left: 125px;
+    width: 300px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+#lien {
+    width: 100%;
+    margin-left: 150px;
+
+}
+#lien a {
+    width: 87px;
+    margin-left: 2%;
+    color: white;
+    text-decoration: none;
+    border: 3px solid yellow;
+    border-radius: 5px;
+    padding: 2%;
+    text-align: center; /* Centre le texte à l'intérieur du bouton */
+}
+#lien a:hover {
+    font-weight: bold;
+    text-align: center;
+}
+#photo{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 420px;
+    margin-right: 5%;
+}
+#photo p {
+    margin-right: 150px;
+    color: white;
+    height: 50px;
+}
+
+#titre {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 700px;
+    border-bottom: 1px solid white;
+}
+#titre h1 {
+    color: white;
+    margin-left: 50%;
+    width: 380px;
+ }
+#front {
+    width: 417.6px;
+ }
+#front img {
+    width: 200px;
+    height: 112px;
+}
+#competence {
+    width: 417.6px;
+ }
+#competence .python {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#competence img {
+    width: 200px;
+    height: 112px;
+}
+.python img {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    background-color: white;
+}
+#pyth {
+    display: flex;
+    justify-content: space-between;
+}
+#php {
+    display: flex;
+    justify-content: space-between;
+}
+#environement {
+    width: 417.6px;
+}
+#environement img {
+    width: 200px;
+    height: 112px;
+}
+.dock {
+    background-color: white;
+}
+.colonne {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ }
+.para {
+    color: white;
+    font-weight: bold;
+}
+#front h1 {
+    margin-left: 0px;
+ }
+#competence h1 {
+    margin-left: 0px;
+ }
+
+#competence .para {
+    text-align: left;
+}
+#competence div p {
+    font-weight: bold;
+}
+.pourcentage {
+    background-color: white;
+   
+}
+#competence .pourcentage p {
+    color: black;
+    height: 5px;
+}
+#environement h1{
+    margin-left: 0px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    border-bottom:  1px solid white;
+ }
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+nav a:hover {
+    color: red;
+    box-shadow: 20px 20px 50px red;
+}
+#sujet {
+    display: flex;
+    justify-content: space-between;
+}
+#projet div {
+    display: flex;
+    justify-content: space-around;
+}
+#projet h2 {
+    text-align: center;
+}
+#projet img {
+    width: 200px;
+    height: 300px;
+ }
+#accueil {
+        display: flex;   
+        justify-content: space-between;
+ }
+#accueil a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+section {
+    width: 417.6px;
+}
