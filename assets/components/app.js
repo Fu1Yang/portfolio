@@ -133,6 +133,30 @@ const App = () => {
           </section>
         </div>
       </div>
+
+    <div id='formulaire'>
+      <div id='contact'>
+      <p>Je vous contacterez le plus rapidement possible</p>
+      </div>
+      <form method='post' action=''>
+
+        <fieldset>
+          <legend>Formulaire de contact</legend>
+
+          <label>name:</label>
+          <input type='text' id='name' name='name' required/>
+
+          <label>email:</label>
+          <input type='email' id='email' name='email' required/>
+
+          <label>Message:</label>
+          <textarea type='text' id='message' name='message'/>
+
+        </fieldset>
+        <button type='submit' >envoyer</button>
+      </form>
+    </div>
+    <footer>Copyright Yang Fu</footer>
     </div>
   );
 };
