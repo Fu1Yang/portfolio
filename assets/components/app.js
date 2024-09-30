@@ -90,10 +90,10 @@ const App = () => {
           </div>
           <div id='competence'>
             <h1>Compétence Back-end</h1>
-            <div className='python' id='pyth'>
+            {/* <div className='python' id='pyth'>
               <img src={python}  alt='logo python'/>
               <img src={django}  alt='logo django'/>
-            </div>
+            </div> */}
             <div className='python' id='php'>
               <img src={php}  alt='logo php'/>
               <img src={symfony}  alt='logo symfony'/>
@@ -132,31 +132,58 @@ const App = () => {
             <p>Django</p>
           </section>
         </div>
+      </div> 
+
+      <div id="experience">
+        <h1>Expérience</h1>
+        <div id='row'>
+          <div id='row2'>
+            <div id='exp'>
+              <h2 className='center'>2024</h2>
+            </div>
+            <div className='.rond'>
+              <p className='center' id='raduis'></p>
+              <p id='rad'></p>
+            </div>
+          </div>
+          <div id='description'>
+              <h2>Stage de développeur web pour une association</h2>
+              <h4>Centre val de loire Vierzon</h4>
+              <paragraphe>
+              Dans le cadre de ma formation en développement web, j'ai eu l'opportunité de réaliser un stage au sein d'une association. Ce stage m'a permis de mettre en pratique les compétences que j'ai acquises, notamment dans la conception et le développement d'applications web.
+Mon principal projet durant ce stage a été la création d'un site web basé sur un système de gestion de contenu (CMS). L'objectif était de fournir à l'association un site qu'elle pourrait gérer de manière autonome, sans avoir à faire appel à un professionnel pour chaque modification. J'ai donc opté pour la mise en place d'une architecture MVC (Modèle-Vue-Contrôleur), une approche qui permet une séparation claire entre la logique métier, l'interface utilisateur et la gestion des données.
+Pour la partie back-end, j'ai utilisé PHP, un langage de programmation particulièrement adapté aux applications web dynamiques. Cette partie du projet était essentielle pour assurer la gestion des contenus, la sécurité et l'administration du site.
+Quant au front-end, j'ai développé l'interface utilisateur à l'aide des technologies HTML, CSS et JavaScript. L'interface se devait d'être simple, intuitive et facilement modifiable par le responsable de l'association.
+Ce projet m'a permis d’acquérir une expérience pratique significative, notamment en travaillant sur une solution CMS personnalisée. J'ai également renforcé mes compétences en gestion de projet, puisque j'ai dû m'assurer que le site soit fonctionnel, sécurisé et facile à utiliser pour l'équipe de l'association.
+Ce stage m'a permis d'appliquer et de perfectionner mes connaissances techniques, tout en contribuant à un projet utile pour une structure associative.
+              </paragraphe>
+          </div>
+        </div>
       </div>
 
-    <div id='formulaire'>
-      <div id='contact'>
-      <p>Je vous contacterez le plus rapidement possible</p>
+      <div id='formulaire'>
+        <div id='contact'>
+        <p>Je vous contacterez le plus rapidement possible</p>
+        </div>
+        <form method='post' action=''>
+
+          <fieldset>
+            <legend>Formulaire de contact</legend>
+
+            <label>name:</label>
+            <input type='text' id='name' name='name' required/>
+
+            <label>email:</label>
+            <input type='email' id='email' name='email' required/>
+
+            <label>Message:</label>
+            <textarea type='text' id='message' name='message'/>
+
+          </fieldset>
+          <button type='submit' >envoyer</button>
+        </form>
       </div>
-      <form method='post' action=''>
-
-        <fieldset>
-          <legend>Formulaire de contact</legend>
-
-          <label>name:</label>
-          <input type='text' id='name' name='name' required/>
-
-          <label>email:</label>
-          <input type='email' id='email' name='email' required/>
-
-          <label>Message:</label>
-          <textarea type='text' id='message' name='message'/>
-
-        </fieldset>
-        <button type='submit' >envoyer</button>
-      </form>
-    </div>
-    <footer>Copyright Yang Fu</footer>
+      <footer>Copyright Yang Fu</footer>
     </div>
   );
 };

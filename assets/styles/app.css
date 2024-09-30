@@ -10,6 +10,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid white;
+    
 }
 #herder h1 {
     margin-left: 162px;
@@ -205,6 +206,49 @@ nav a:hover {
 section {
     width: 417.6px;
 }
+
+#row {
+    display: flex;
+    justify-content: space-around;
+}
+#row2 {
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+#description {
+    width: 800px;
+}
+#experience h1{
+    margin-left: 10vh;
+}
+#exp {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+.rond {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#raduis {
+    width: 16px;
+    height: 16px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+#rad {
+    width: 1px;
+    height: 315px;
+    background-color: yellow;
+    margin-left: 45%;
+}
+
+
 #formulaire {
     height: 600px;
     display: flex;
