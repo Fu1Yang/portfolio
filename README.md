@@ -1,0 +1,1 @@
+Bienvenue sur mon portfolio de développeur web ! Ce site présente mes compétences, mes projets. Il est conçu pour montrer ce que je sais faire en tant que développeur web et web mobile, avec une interface moderne et intuitive.
