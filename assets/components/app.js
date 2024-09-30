@@ -13,6 +13,7 @@ import symfony from '../../assets/images/symfony.JPG';
 import debian from '../../assets/images/debian.JPG';
 import vs from '../../assets/images/vs.JPG';
 import mysql from '../../assets/images/mysql.JPG';
+import trello from '../../assets/images/trello.JPG';
 import destop from '../../assets/imageProjet/destop.JPG';
 import mobile from '../../assets/imageProjet/accueilMobile.JPG';
 
@@ -54,7 +55,7 @@ const App = () => {
 
     <div id='contenaire'>
       <nav>
-        <a href='#'>Mes Projet</a>
+        <a href='/projet/mesProjet'>Mes Projet</a>
         <a href='/apropos/deMoi'>a propos de moi</a>
         <a href='#'>menu</a>
       </nav>
@@ -65,8 +66,8 @@ const App = () => {
           <p>Je suis développeur web et  mobile</p>
           <div id='lien'>
             <a href='#'>Développeur</a>
-            <a href='#'>linkedin</a>
-            <a href='#'>Github</a>
+            <a href='https://www.linkedin.com/in/fu-yang-588646243/'>linkedin</a>
+            <a href='https://github.com/Fu1Yang'>Github</a>
           </div>
         </div>
         <div id='photo'>
@@ -101,11 +102,14 @@ const App = () => {
           </div>
           <div id='environement'>
             <h1>Environement de Travaille</h1>
-            <div><img className='dock' src={docker}  alt='logo docker'/></div>
-            <div><img className='dock' src={vs} alt='logo visual studio code'/></div>
-            <div><img className='dock' src={debian} alt='logo debian'/></div>
-            <div><img className='dock' src={github} alt='logo github'/></div>
-            <div><img className='dock' src={mysql} alt='logo mysql'/></div>
+            <div id='logoEnviro'>
+              <div><img className='dock' src={docker}  alt='logo docker'/></div>
+              <div><img className='dock' src={vs} alt='logo visual studio code'/></div>
+              <div><img className='dock' src={debian} alt='logo debian'/></div>
+              <div><img className='dock' src={github} alt='logo github'/></div>
+              <div><img className='dock' src={mysql} alt='logo mysql'/></div>
+              <div><img className='dock' src={trello} alt='logo de trello'/></div>
+            </div>
         </div>
       </div>
       </div>
@@ -161,7 +165,9 @@ Ce stage m'a permis d'appliquer et de perfectionner mes connaissances techniques
         </div>
       </div>
 
+      <h1>Me contacter</h1>
       <div id='formulaire'>
+       
         <div id='contact'>
         <p>Je vous contacterez le plus rapidement possible</p>
         </div>
