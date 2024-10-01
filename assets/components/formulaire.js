@@ -18,7 +18,7 @@ function ContactForm(){
     const handleSubmit = async (e)=> {
         e.preventDefault();
         try {
-            const response = await fetch("http://localhost:8000",{ 
+            const response = await fetch("https://localhost:8000/message/messageRecu",{ 
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -50,17 +50,17 @@ function ContactForm(){
           <fieldset>
             <legend>Formulaire de contact</legend>
 
-            <label>name:</label>
-            <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Name" />
+            <label htmlFor="name">Nom:</label>
+            <input id="name" type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Nom" />
 
-            <label>email:</label>
-            <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Email" />
+            <label htmlFor="email">Email:</label>
+            <input id="email" type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Email" />
 
-            <label>Message:</label>
-            <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Message"></textarea>
+            <label htmlFor="message">Message:</label>
+            <textarea id="message" name="message" value={formData.message} onChange={handleChange} placeholder="Message"></textarea>
 
           </fieldset>
-          <button type='submit' >envoyer</button>
+          <button type='submit'>envoyer</button>
         </form>
       </div>
       </> 
