@@ -18,6 +18,7 @@
     },
     "license": "UNLICENSED",
     "private": true,
+    "proxy": "http://localhost:8000/message/messageRecu",
     "scripts": {
         "dev-server": "encore dev-server",
         "dev": "webpack serve --mode development --config webpack.config.js",

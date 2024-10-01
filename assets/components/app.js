@@ -155,14 +155,14 @@ const App = () => {
           <div id='description'>
               <h2>Stage de développeur web pour une association</h2>
               <h4>Centre val de loire Vierzon</h4>
-              <paragraphe>
+              <article>
               Dans le cadre de ma formation en développement web, j'ai eu l'opportunité de réaliser un stage au sein d'une association. Ce stage m'a permis de mettre en pratique les compétences que j'ai acquises, notamment dans la conception et le développement d'applications web.
 Mon principal projet durant ce stage a été la création d'un site web basé sur un système de gestion de contenu (CMS). L'objectif était de fournir à l'association un site qu'elle pourrait gérer de manière autonome, sans avoir à faire appel à un professionnel pour chaque modification. J'ai donc opté pour la mise en place d'une architecture MVC (Modèle-Vue-Contrôleur), une approche qui permet une séparation claire entre la logique métier, l'interface utilisateur et la gestion des données.
 Pour la partie back-end, j'ai utilisé PHP, un langage de programmation particulièrement adapté aux applications web dynamiques. Cette partie du projet était essentielle pour assurer la gestion des contenus, la sécurité et l'administration du site.
 Quant au front-end, j'ai développé l'interface utilisateur à l'aide des technologies HTML, CSS et JavaScript. L'interface se devait d'être simple, intuitive et facilement modifiable par le responsable de l'association.
 Ce projet m'a permis d’acquérir une expérience pratique significative, notamment en travaillant sur une solution CMS personnalisée. J'ai également renforcé mes compétences en gestion de projet, puisque j'ai dû m'assurer que le site soit fonctionnel, sécurisé et facile à utiliser pour l'équipe de l'association.
 Ce stage m'a permis d'appliquer et de perfectionner mes connaissances techniques, tout en contribuant à un projet utile pour une structure associative.
-              </paragraphe>
+              </article>
           </div>
         </div>
       </div>

@@ -16,15 +16,19 @@ use Symfony\Component\Routing\Attribute\Route;
 class MessageController extends AbstractController
 {
     #[Route('/messageRecu', name: 'app_message_recu', methods: ['POST'])]
-    public function messageRecu(Request $request): JsonResponse
+    public function messageRecu(Request $request, EntityManagerInterface $entityManager): JsonResponse
     {
     $data  = json_decode($request->getContent(), true);
     if (!$data || !isset($data['name'], $data['email'], $data["message"])) {
         return new JsonResponse(['error'=> 'Invalid data'], 400);
     }
-    $name = $data['name'];
-    $email = $data['email'];
-    $message = $data['message'];
+    $message = new Message();
+    $message->setName($data['name']);
+    $message->setEmail($data['email']);
+    $message->setMessage($data['message']);
+
+    $entityManager->persist($message);
+    $entityManager->flush();
     
     return new JsonResponse(["success"=> 'Message received']);
     }
