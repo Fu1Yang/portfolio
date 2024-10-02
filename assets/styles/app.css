@@ -16,8 +16,12 @@ h1 {
 #herder h1 {
     margin-left: 162px;
     margin-top: 204px;
+    border: none !important; 
+    outline: none !important; 
 }
 #herder h1:hover {
+    border: none !important; 
+    outline: none !important; 
     box-shadow: 20px 20px 50px red;
     color: red;
     
