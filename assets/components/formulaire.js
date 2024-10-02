@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import profile from '../../assets/images/profile.JPG';
 
 function ContactForm(){
     const [formData, setFormData] = useState({
@@ -27,10 +28,17 @@ function ContactForm(){
            });
            if(response.ok){
             console.log('Form submitted successfully');
+            setFormData({
+              name: "",
+              email: "",
+              message: "",
+          });
            }
            else {
             console.error('Form submission error');
            }
+       
+          
         }
            catch(error){
             console.error('Error', error);
@@ -44,8 +52,9 @@ function ContactForm(){
         
         <div id='contact'>
         <p>Je vous contacterez le plus rapidement possible</p>
+        <img src={profile} alt='photo de identité'/>
         </div>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} >
 
           <fieldset>
             <legend>Formulaire de contact</legend>

@@ -80,8 +80,8 @@ h1 {
 }
 #titre h1 {
     color: white;
-    margin-left: 50%;
-    width: 380px;
+    text-align: center;
+
  }
 #front {
     width: 417.6px;
@@ -203,7 +203,7 @@ nav a:hover {
 }
 #projet img {
     width: 200px;
-    height: 300px;
+    height: auto;
  }
 #accueil {
         display: flex;   
@@ -221,11 +221,11 @@ section {
 
 #experience {
     border-bottom: 1px solid white;
+    height: 600px;
 }
 
 #row {
     display: flex;
-    justify-content: space-around;
 }
 #row2 {
     width: 100px;
@@ -233,7 +233,12 @@ section {
     justify-content: space-around;
 }
 #description {
-    width: 800px;
+    width: 100%;
+}
+#description article {
+    width: 95%;
+    font-size: 20px;
+    text-align: justify;
 }
 
 #exp {
@@ -279,7 +284,7 @@ section {
 #contact {
     display: flex;
     flex-direction: column;
-    background-color: blue;
+    background-color: rgb(107, 107, 145);
     width: 300px;
     height: 409px;
     margin-bottom: 2%;
