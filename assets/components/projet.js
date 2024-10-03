@@ -11,6 +11,13 @@ const Projet = () => {
         <a href='#'>menu</a>
       </nav>
       <h1>Mes Projet</h1>
+      <section>
+      <img src={mobile} alt='photo de l accueil'/>
+      <img src={mobile} alt='photo de l accueil'/>
+      <img src={mobile} alt='photo de l accueil'/>
+      <img src={mobile} alt='photo de l accueil'/>
+
+      </section>
     </div>
   );
 };

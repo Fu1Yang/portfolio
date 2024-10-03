@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import profile from '../../assets/images/profile.JPG';
+import profile from '../../assets/images/porfolio.PNG';
 
 function ContactForm(){
     const [formData, setFormData] = useState({
