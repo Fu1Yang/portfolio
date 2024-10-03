@@ -2,7 +2,7 @@ import '../styles/app.css';
 import React, { useState, useEffect } from 'react';
 import ContactForm from './formulaire';
 
-import profile from '../../assets/images/profile.JPG';
+import profile from '../../assets/images/porfolio.PNG';
 import pngegg from '../../assets/images/logo.webp';
 import javascript from '../../assets/images/js.webp';
 import python from '../../assets/images/Python.JPG';
@@ -123,11 +123,11 @@ const App = () => {
             <h2>Projet pour une association</h2>
             <p>Le projet consiste a faire un cms pour la gestion du site</p>
             <div  id='accueil'>
-              <a href='#'>vue sur destop<img src={destop} alt='photo de l accueil'/></a>
-              <a href="#">vue sur mobile<img src={mobile} alt='photo de l accueil'/></a>
+              <a href='/projet/mesProjet'>vue sur destop<img src={destop} alt='photo de l accueil'/></a>
+              <a href='/projet/mesProjet'>vue sur mobile<img src={mobile} alt='photo de l accueil'/></a>
             </div>
           </section>
-          <section>
+          {/* <section>
             <h2>Projet gestion de planning avec rdv en ligne</h2>
             <p>Symfony</p>
             <p>Django</p>
@@ -136,7 +136,7 @@ const App = () => {
             <h2>Projet application de gestion de planning</h2>
             <p>Symfony</p>
             <p>Django</p>
-          </section>
+          </section> */}
         </div>
       </div> 
 
