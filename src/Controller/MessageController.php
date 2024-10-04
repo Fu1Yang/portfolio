@@ -10,12 +10,14 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
+use Symfony\Component\Mailer\MailerInterface;
+use Symfony\Component\Mime\Email;
 
 #[Route('/message')]
 class MessageController extends AbstractController
 {
     #[Route('/messageRecu', name: 'app_message_recu', methods: ['POST'])]
-    public function messageRecu(Request $request, EntityManagerInterface $entityManager): JsonResponse
+    public function messageRecu(Request $request, EntityManagerInterface $entityManager, MailerInterface $mailer): JsonResponse
     {
     $data  = json_decode($request->getContent(), true);
     if (!$data || !isset($data['name'], $data['email'], $data["message"])) {
@@ -23,12 +25,28 @@ class MessageController extends AbstractController
     }
     $message = new Message();
     $message->setName($data['name']);
-    $message->setEmail($data['email']);
+    $message->setEmail(filter_var($data['email'], FILTER_VALIDATE_EMAIL));
     $message->setMessage($data['message']);
 
     $entityManager->persist($message);
     $entityManager->flush();
     
+    try {
+        $email = (new Email())
+        ->from('hello@example.com')
+        ->to('you@example.com')
+        //->cc('cc@example.com')
+        //->bcc('bcc@example.com')
+        //->replyTo('fabien@example.com')
+        //->priority(Email::PRIORITY_HIGH)
+        ->subject('Time for Symfony Mailer!')
+        ->text('Sending emails is fun again!')
+        ->html('<p>See Twig integration for better HTML integration!</p>');
+    
+        $mailer->send($email);
+    } catch (\Exception $e) {
+        return new JsonResponse(['error' => 'Email sending failed: ' . $e->getMessage()], 500);
+    }
     return new JsonResponse(["success"=> 'Message received']);
     }
 

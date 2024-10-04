@@ -35,7 +35,7 @@ const Projet = () => {
               <img src={destop}  alt="page d'accueil du site de l'association"/>
               <img src={mobile}  alt="page d'accueil du site de l'association"/>
               <img src={mcd}  alt="image du diagramme mcd" />
-              <img  src={interfac}  alt="page d'interface administrateur"/>
+              <img src={interfac}  alt="page d'interface administrateur"/>
             </div>
         </article>
 

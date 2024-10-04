@@ -9,6 +9,8 @@ RUN docker-php-ext-install mysqli pdo pdo_mysql
 
 # # Copie des fichiers de l'application dans le conteneur
 # COPY . /var/www/html
+COPY 000-default.conf /etc/apache2/sites-available/000-default.conf
+RUN a2ensite 000-default
 
 # # Définition du répertoire de travail
 # WORKDIR /var/www/html
