@@ -36,7 +36,7 @@ h1 {
     box-shadow: 5px 5px 200px red;
 } 
 #herder p {
-    margin-left: 125px;
+    margin-left: 137px;
     width: 300px;
     text-align: center;
     color: rgb(255, 255, 255);
@@ -288,10 +288,9 @@ section {
 #contact {
     display: flex;
     flex-direction: column;
-    background-color: rgb(107, 107, 145);
     width: 300px;
-    height: 409px;
-    margin-bottom: 2%;
+    height: 480px;
+
 }
 #contact p {
     font-weight: bold;
@@ -301,14 +300,14 @@ form {
     margin-top: 1%;
     display: flex;
     flex-direction: column;
-
+    height: 480px;
 }
 
 form fieldset {
     display: flex;
     flex-direction: column;
     width: 628px;
-    height: 400px;
+
 }
 form button {
     width: 90px;

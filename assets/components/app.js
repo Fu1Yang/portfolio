@@ -18,6 +18,8 @@ import mysql from '../../assets/images/mysql.JPG';
 import trello from '../../assets/images/trello.JPG';
 import destop from '../../assets/imageProjet/destop.JPG';
 import mobile from '../../assets/imageProjet/accueilMobile.JPG';
+import cabinet from '../../assets/imageProjet/cabinet.PNG';
+import cabinetCompte from '../../assets/imageProjet/cabinet1.PNG';
 
 
 const App = () => {
@@ -48,7 +50,7 @@ const App = () => {
       } else {
         clearInterval(interval);
       }
-    }, 100); // Adjust the interval speed as needed
+    }, 15); // Adjust the interval speed as needed
 
     return () => clearInterval(interval); // Cleanup the interval on component unmount
   }, [index]); // Dependency array includes `index` so that it re-runs when `index` changes
@@ -58,16 +60,13 @@ const App = () => {
     <div id='contenaire'>
       <nav>
         <a href='/projet/mesProjet'>Mes Projet</a>
-        <a href='/apropos/deMoi'>a propos de moi</a>
-        <a href='#'>menu</a>
       </nav>
 
       <div id='herder'>
         <div>
           <h1>Bienvenue sur mon Portfolio</h1>
-          <p>Je suis développeur web et  mobile</p>
+          <p>Je suis développeur web et web mobile</p>
           <div id='lien'>
-            <a href='#'>Développeur</a>
             <a href='https://www.linkedin.com/in/fu-yang-588646243/'>linkedin</a>
             <a href='https://github.com/Fu1Yang'>Github</a>
           </div>
@@ -93,10 +92,6 @@ const App = () => {
           </div>
           <div id='competence'>
             <h1>Compétence Back-end</h1>
-            {/* <div className='python' id='pyth'>
-              <img src={python}  alt='logo python'/>
-              <img src={django}  alt='logo django'/>
-            </div> */}
             <div className='python' id='php'>
               <img src={php}  alt='logo php'/>
               <img src={symfony}  alt='logo symfony'/>
@@ -123,19 +118,20 @@ const App = () => {
             <h2>Projet pour une association</h2>
             <p>Le projet consiste a faire un cms pour la gestion du site</p>
             <div  id='accueil'>
-              <a href='#'>vue sur destop<img src={destop} alt='photo de l accueil'/></a>
-              <a href="#">vue sur mobile<img src={mobile} alt='photo de l accueil'/></a>
+              <a href='/projet/mesProjet'>vue sur destop<img src={destop} alt='photo vue destop'/></a>
+              <a href='/projet/mesProjet'>vue sur mobile<img src={mobile} alt='photo vue mobile'/></a>
+            </div>
+          </section>
+          <section>
+            <h2>Projet en cours</h2>
+            <div  id='accueil'>
+              <a href='/projet/mesProjet'>la page de connexion<img src={cabinet} alt='photo de la page de connexion'/></a>
+              <a href='/projet/mesProjet'>la page du compte du patient<img src={cabinetCompte} alt='photo de la page du compte du patient'/></a>
             </div>
           </section>
           {/* <section>
-            <h2>Projet gestion de planning avec rdv en ligne</h2>
-            <p>Symfony</p>
-            <p>Django</p>
-          </section>
-          <section>
-            <h2>Projet application de gestion de planning</h2>
-            <p>Symfony</p>
-            <p>Django</p>
+            <h2></h2>
+           
           </section> */}
         </div>
       </div> 
