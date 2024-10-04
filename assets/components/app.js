@@ -23,7 +23,7 @@ import cabinetCompte from '../../assets/imageProjet/cabinet1.PNG';
 
 
 const App = () => {
-  const prensentation = ["Bonjour je me présente je m'appelle Yang Fu. Je suis passionné par le métier de développeur."];
+  const presentation = ["Bonjour je me présente je m'appelle Yang Fu. Je suis passionné par le métier de développeur."];
   const [text, setText] = useState('');
   const [index, setIndex] = useState(0);
 
@@ -31,8 +31,8 @@ const App = () => {
     // Fonction pour extraire le texte et le mettre à jour dans le state
     const extrait = () => {
       let extractedText = [];
-      for (let i = 0; i < prensentation.length; i++) {
-        const element = prensentation[i];
+      for (let i = 0; i < presentation.length; i++) {
+        const element = presentation[i];
         for (let j = 0; j < element.length; j++) {
           extractedText.push(element[j]);
         }
@@ -65,7 +65,7 @@ const App = () => {
       <div id='herder'>
         <div>
           <h1>Bienvenue sur mon Portfolio</h1>
-          <p>Je suis développeur web et web mobile</p>
+          <p>Je suis activement à la recherche d'une entreprise pour une alternance pour le titre de concepteur développeur d'application de niveau 6</p>
           <div id='lien'>
             <a href='https://www.linkedin.com/in/fu-yang-588646243/'>linkedin</a>
             <a href='https://github.com/Fu1Yang'>Github</a>

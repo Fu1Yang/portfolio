@@ -36,9 +36,9 @@ h1 {
     box-shadow: 5px 5px 200px red;
 } 
 #herder p {
-    margin-left: 137px;
+    margin-left: 165px;
     width: 300px;
-    text-align: center;
+    text-align: justify;
     color: rgb(255, 255, 255);
 }
 #lien {
