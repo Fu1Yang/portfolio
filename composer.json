@@ -17,12 +17,15 @@
         "symfony/flex": "^2",
         "symfony/form": "7.1.*",
         "symfony/framework-bundle": "7.1.*",
+        "symfony/mailer": "7.1.*",
+        "symfony/mailer-send-mailer": "7.1.*",
         "symfony/runtime": "7.1.*",
         "symfony/security-csrf": "7.1.*",
         "symfony/twig-bundle": "7.1.*",
         "symfony/validator": "7.1.*",
         "symfony/webpack-encore-bundle": "^2.1",
-        "symfony/yaml": "7.1.*"
+        "symfony/yaml": "7.1.*",
+        "twig/twig": "^3.14.0"
     },
     "config": {
         "allow-plugins": {
