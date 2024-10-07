@@ -1,10 +1,11 @@
-{# templates/child.html.twig #}
 {% extends 'base.html.twig' %}
 
 {% block title %}
-    Page spécifique
+    Page d'accueil
 {% endblock %}
 
 {% block body %}
-    <div id="root"></div>
+    <div id="root"></div> <!-- C'est ici que React rendra l'application -->
+    <link rel="stylesheet" href="{{ asset('build/app.css') }}"> <!-- Fichier CSS généré par Webpack -->
+    <script src="{{ asset('build/app.js') }}"></script> <!-- Fichier JS généré par Webpack -->
 {% endblock %}
