@@ -35,7 +35,7 @@ Encore.addLoader({
 // Configuration du Dev Server
 Encore.configureDevServerOptions(options => {
     options.historyApiFallback = true; // Permet de gérer l'historique de l'API HTML5
-    options.port = 9000; // Choisissez le port que vous souhaitez utiliser
+    options.port = 8000; // Choisissez le port que vous souhaitez utiliser
     options.hot = true; // Activation du rechargement à chaud
     options.static = {
         directory: `${__dirname}/public/build`, // Répertoire des fichiers statiques
