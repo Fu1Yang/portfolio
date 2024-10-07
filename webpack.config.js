@@ -1,7 +1,6 @@
 const Encore = require('@symfony/webpack-encore');
 
 // Manually configure the runtime environment if not already configured yet by the "encore" command.
-// It's useful when you use tools that rely on webpack.config.js file.
 if (!Encore.isRuntimeEnvironmentConfigured()) {
     Encore.configureRuntimeEnvironment(process.env.NODE_ENV || 'dev');
 }
@@ -15,7 +14,8 @@ Encore
   .enableSourceMaps(!Encore.isProduction())
   .enableVersioning(Encore.isProduction())
   .autoProvidejQuery()
-  .enableSingleRuntimeChunk();
+  .enableSingleRuntimeChunk()
+  .enableBuildNotifications(); // Notification de construction
 
 // Ajouter les loaders d'images
 Encore.addLoader({
@@ -30,6 +30,16 @@ Encore.addLoader({
       },
     },
   ],
+});
+
+// Configuration du Dev Server
+Encore.configureDevServerOptions(options => {
+    options.historyApiFallback = true; // Permet de gérer l'historique de l'API HTML5
+    options.port = 9000; // Choisissez le port que vous souhaitez utiliser
+    options.hot = true; // Activation du rechargement à chaud
+    options.static = {
+        directory: `${__dirname}/public/build`, // Répertoire des fichiers statiques
+    };
 });
 
 module.exports = Encore.getWebpackConfig();
