@@ -23,6 +23,7 @@ class MessageController extends AbstractController
     if (!$data || !isset($data['name'], $data['email'], $data["message"])) {
         return new JsonResponse(['error'=> 'Invalid data'], 400);
     }
+    
     $message = new Message();
     $message->setName($data['name']);
     $message->setEmail(filter_var($data['email'], FILTER_VALIDATE_EMAIL));
@@ -30,23 +31,7 @@ class MessageController extends AbstractController
 
     $entityManager->persist($message);
     $entityManager->flush();
-    
-    try {
-        $email = (new Email())
-        ->from('hello@example.com')
-        ->to('you@example.com')
-        //->cc('cc@example.com')
-        //->bcc('bcc@example.com')
-        //->replyTo('fabien@example.com')
-        //->priority(Email::PRIORITY_HIGH)
-        ->subject('Time for Symfony Mailer!')
-        ->text('Sending emails is fun again!')
-        ->html('<p>See Twig integration for better HTML integration!</p>');
-    
-        $mailer->send($email);
-    } catch (\Exception $e) {
-        return new JsonResponse(['error' => 'Email sending failed: ' . $e->getMessage()], 500);
-    }
+
     return new JsonResponse(["success"=> 'Message received']);
     }
 
