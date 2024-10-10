@@ -23,8 +23,8 @@
     "proxy": "http://localhost:8000/message/messageRecu",
     "scripts": {
         "dev-server": "encore dev-server",
-        "dev": "webpack serve --mode development --config webpack.config.js",
-        "start": "npm run dev",
+        "dev": "webpack serve --mode production --config webpack.config.js",
+        "start": "NODE_ENV=production node server.js",
         "watch": "encore dev --watch",
         "build": "encore production --progress",
         "watch-build": "nodemon --watch ./src --exec npm run build",

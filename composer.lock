@@ -1229,7 +1229,6 @@
             "time": "2024-08-05T20:32:22+00:00"
         },
         {
-<<<<<<< HEAD
             "name": "egulias/email-validator",
             "version": "4.0.2",
             "source": {
@@ -1297,8 +1296,6 @@
             "time": "2023-10-06T06:47:41+00:00"
         },
         {
-=======
->>>>>>> 28b1d0d (connection databases)
             "name": "nelmio/cors-bundle",
             "version": "2.5.0",
             "source": {
