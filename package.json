@@ -20,7 +20,7 @@
     },
     "license": "UNLICENSED",
     "private": true,
-    "proxy": "http://localhost:8000/message/messageRecu",
+    "proxy": "https://portfolio-qlkh.onrender.com/message/messageRecu",
     "scripts": {
         "dev-server": "encore dev-server",
         "dev": "webpack serve --mode production --config webpack.config.js",
