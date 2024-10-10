@@ -1,0 +1,13 @@
+version: 1
+services:
+  - type: web
+    name: my-symfony-app
+    env: node
+    plan: starter
+    buildCommand: |
+      curl -sS https://get.symfony.com/cli/installer | bash
+      mv ~/.symfony*/bin/symfony /usr/local/bin/symfony
+      yarn --frozen-lockfile install
+      npm run build
+    startCommand: "symfony server:start --no-tls"
+    autoDeploy: true
