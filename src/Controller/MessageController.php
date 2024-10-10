@@ -17,13 +17,12 @@ use Symfony\Component\Mime\Email;
 class MessageController extends AbstractController
 {
     #[Route('/messageRecu', name: 'app_message_recu', methods: ['POST'])]
-    public function messageRecu(Request $request, EntityManagerInterface $entityManager, MailerInterface $mailer): JsonResponse
+    public function messageRecu(Request $request, EntityManagerInterface $entityManager): JsonResponse
     {
     $data  = json_decode($request->getContent(), true);
     if (!$data || !isset($data['name'], $data['email'], $data["message"])) {
         return new JsonResponse(['error'=> 'Invalid data'], 400);
     }
-    
     $message = new Message();
     $message->setName($data['name']);
     $message->setEmail(filter_var($data['email'], FILTER_VALIDATE_EMAIL));
