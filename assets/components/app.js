@@ -149,8 +149,8 @@ const App = () => {
             </div>
           </div>
           <div id='description'>
-              <h2>Stage de développeur web pour une association</h2>
-              <h4>Centre val de loire Vierzon</h4>
+              <h2>Stage de développeur web pour une association.</h2>
+              <h4>Centre val de loire Vierzon.</h4>
               <article>
                 Dans le cadre de ma formation en développement web, j'ai eu l'opportunité de réaliser un stage au sein d'une association. Ce stage m'a permis de mettre en pratique les compétences que j'ai acquises, notamment dans la conception et le développement d'applications web.
                 Mon principal projet durant ce stage a été la création d'un site web basé sur un système de gestion de contenu (CMS). L'objectif était de fournir à l'association un site qu'elle pourrait gérer de manière autonome, sans avoir à faire appel à un professionnel pour chaque modification. J'ai donc opté pour la mise en place d'une architecture MVC (Modèle-Vue-Contrôleur), une approche qui permet une séparation claire entre la logique métier, l'interface utilisateur et la gestion des données.
