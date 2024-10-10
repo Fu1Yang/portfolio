@@ -5,8 +5,9 @@ services:
     env: node
     plan: starter
     buildCommand: |
-      curl -sS https://get.symfony.com/cli/installer | bash
-      mv ~/.symfony*/bin/symfony /usr/local/bin/symfony
+      curl -sS https://getcomposer.org/installer | php
+      mv composer.phar /usr/local/bin/composer
+      composer install
       yarn --frozen-lockfile install
       npm run build
     startCommand: "symfony server:start --no-tls"
