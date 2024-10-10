@@ -7,6 +7,7 @@
         "core-js": "^3.23.0",
         "css-loader": "^7.1.2",
         "file-loader": "^6.2.0",
+        "gh-pages": "^6.1.1",
         "nodemon": "^3.1.6",
         "regenerator-runtime": "^0.13.9",
         "sass": "^1.77.8",
@@ -26,7 +27,9 @@
         "start": "npm run dev",
         "watch": "encore dev --watch",
         "build": "encore production --progress",
-        "watch-build": "nodemon --watch ./src --exec npm run build"
+        "watch-build": "nodemon --watch ./src --exec npm run build",
+        "predeploy": "yarn encore production",
+        "deploy": "gh-pages -d public/build"
     },
     "dependencies": {
         "@babel/preset-react": "^7.24.7",
