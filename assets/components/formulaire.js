@@ -19,7 +19,7 @@ function ContactForm(){
     const handleSubmit = async (e)=> {
         e.preventDefault();
         try {
-            const response = await fetch("http://localhost:8000/message/messageRecu",{ 
+            const response = await fetch("https://devfuyang.fr/message/messageRecu",{ 
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
