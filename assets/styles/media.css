@@ -1,0 +1,206 @@
+@media screen and (max-width: 1233px) {
+    #front h1 {
+        font-size: 29px;
+    }
+    #front img {
+        width: 180px;
+        height: 100px;
+    }
+    #competence {
+        display: flex;
+        flex-direction: column;
+    }
+    #competence h1 {
+        font-size: 29px;
+    }
+    #competence img {
+        width: 180px;
+        height: 100px;
+    }
+    
+    #environement h1 {
+        font-size: 29px;
+    }
+    #environement img {
+        width: 180px;
+        height: 100px;
+    }
+
+}
+@media screen and (max-width: 1054px) {
+    #herder {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid white;
+    }
+    #herder h1 {
+        margin-left: 100px;
+        margin-top: 150px;
+        border: none !important; 
+        outline: none !important; 
+    }
+    #herder p {
+        margin-left: 65px;
+        width: 300px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+    #lien {
+        width: 100%;
+        margin-left: 100px;
+
+    }
+    #lien a {
+        width: 87px;
+        margin-left: 1%;
+        color: white;
+        text-decoration: none;
+        border: 3px solid yellow;
+        border-radius: 5px;
+        padding: 2%;
+        text-align: center; /* Centre le texte à l'intérieur du bouton */
+    }
+    #front h1 {
+        font-size: 25px;
+    }
+    #front img {
+        width: 180px;
+        height: 100px;
+    }
+    #competence {
+        display: flex;
+        flex-direction: column;
+    }
+    #competence h1 {
+        font-size: 25px;
+    }
+    #competence img {
+        width: 180px;
+        height: 100px;
+    }
+    
+    #environement h1 {
+        font-size: 25px;
+    }
+    #environement img {
+        width: 180px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    #herder p {
+        margin-left: 125px;
+        width: 200px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+    #herder h1 {
+        font-size: 25px;
+    }
+    #front img {
+        width: 180px;
+        height: 80px;
+    }
+    #competence img {
+        width: 180px;
+        height: 80px;
+    }
+    #environement img {
+        width: 180px;
+        height: 80px;
+    }
+    #description article {
+        font-size: 16px;
+    }
+    form {
+        width: 100%;
+    }
+    form fieldset {
+        width: 550px;
+        height: 400px;
+    }
+    form button {
+        margin-left: 490px;
+    }
+
+    #contact img {
+        width: 250px;
+        height: 250px;
+    }
+}
+@media screen and (max-width: 745px) {
+    form fieldset {
+        width: 450px;
+        height: 400px;
+    }
+    form button {
+        margin-left: 390px;
+    }
+
+    #contact img {
+        width: 250px;
+        height: 250px;
+    }
+}
+@media screen and (max-width: 658px) {
+    #herder h1 {
+        margin-left: 10px;
+        margin-top: 150px;
+        border: none !important; 
+        outline: none !important; 
+    }
+    #herder p {
+        margin-left: 15px;
+        width: 150px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+    }
+    #lien a {
+        width: 87px;
+        margin-left: 1%;
+        color: white;
+        text-decoration: none;
+        border: 3px solid yellow;
+        border-radius: 5px;
+        padding: 1%;
+        text-align: center; /* Centre le texte à l'intérieur du bouton */
+    }
+    #front img {
+        width: 150px;
+        height: 80px;
+    }
+    #competence img {
+        width: 150px;
+        height: 80px;
+    }
+    #environement img {
+        width: 150px;
+        height: 80px;
+    }
+    #formulaire {
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #contact {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    #contact img {
+        width: 250px;
+        height: 250px;
+    }
+    form fieldset {
+        width: 600px;
+        height: 400px;
+    }
+    form button {
+        margin-left: 540px;
+    }
+}

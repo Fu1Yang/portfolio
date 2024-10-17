@@ -1,4 +1,5 @@
 import '../styles/app.css';
+import '../styles/media.css';
 import React, { useState, useEffect } from 'react';
 import ContactForm from './formulaire';
 

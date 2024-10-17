@@ -48,7 +48,6 @@ h1 {
 }
 #lien a {
     width: 87px;
-    margin-left: 2%;
     color: white;
     text-decoration: none;
     border: 3px solid yellow;
@@ -89,10 +88,12 @@ h1 {
  }
 #front {
     width: 417.6px;
+
  }
 #front img {
     width: 200px;
     height: 112px;
+
 }
 #competence {
     width: 417.6px;
@@ -288,7 +289,6 @@ section {
 #contact {
     display: flex;
     flex-direction: column;
-    background-color: rgb(107, 107, 145);
     width: 300px;
     height: 409px;
     margin-bottom: 2%;
