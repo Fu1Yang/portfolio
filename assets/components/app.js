@@ -1,7 +1,7 @@
 import '../styles/app.css';
+import '../styles/media.css';
 import React, { useState, useEffect } from 'react';
 import ContactForm from './formulaire';
-
 import profile from '../../assets/images/porfolio.PNG';
 import pngegg from '../../assets/images/logo.webp';
 import javascript from '../../assets/images/js.webp';

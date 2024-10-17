@@ -1,0 +1,9 @@
+@media screen and (max-width: 1233px) {
+    #front h1 {
+        font-size: 350px;
+    }
+    #front img {
+        width: auto;
+        height: 100px;
+    }
+}
