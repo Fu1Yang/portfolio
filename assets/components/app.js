@@ -64,7 +64,7 @@ const App = () => {
       </nav>
 
       <div id='herder'>
-        <div>
+        <div id='herd'>
           <h1>Bienvenue sur mon Portfolio</h1>
           <p>Je suis développeur web et  mobile</p>
           <div id='lien'>

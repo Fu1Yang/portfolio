@@ -323,7 +323,11 @@ form button {
 form button:hover {
     background-color: rgb(26, 205, 26);
 }
-
+form label strong {
+    color: orange;
+    font-weight: bold;
+    font-size: 20px;
+}
 textarea  {
     height: 230px;
     border-radius: 10px;

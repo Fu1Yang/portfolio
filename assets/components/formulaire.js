@@ -59,14 +59,14 @@ function ContactForm(){
           <fieldset>
             <legend>Formulaire de contact</legend>
 
-            <label htmlFor="name">Nom:</label>
-            <input id="name" type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Nom" />
+            <label htmlFor="name">Nom:<strong>*</strong></label>
+            <input id="name" type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Nom" required/>
 
-            <label htmlFor="email">Email:</label>
-            <input id="email" type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Email" />
+            <label htmlFor="email">Email:<strong>*</strong></label>
+            <input id="email" type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Email" required/>
 
-            <label htmlFor="message">Message:</label>
-            <textarea id="message" name="message" value={formData.message} onChange={handleChange} placeholder="Message"></textarea>
+            <label htmlFor="message">Message:<strong>*</strong></label>
+            <textarea id="message" name="message" value={formData.message} onChange={handleChange} placeholder="Message" required></textarea>
 
           </fieldset>
           <button type='submit'>envoyer</button>
